@@ -7,16 +7,19 @@ name = "pypi"
 flask = "*"
 flask-sqlalchemy = "*"
 flask-cors = "*"
+flask-jwt-extended = "*"
 python-dotenv = "*"
 flask-migrate = "*"
+pydantic = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13.0"
+python_version = "3.13.5"
 
 [scripts]
-start='python run.py'
+dev='python dev.py'
 init="flask db init"
 migrate="flask db migrate"
 upgrade="flask db upgrade"
